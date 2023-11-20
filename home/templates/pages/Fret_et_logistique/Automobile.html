@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Automobile {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Automobile.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Automobile  </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Offre_transport_logistique' %}"><i class="fa fa-home"></i> Offre_transport_logistique</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Automobile   </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p><b>
+                UNE SOLUTION ADAPTEE A L’INDUSTRIE AUTOMOBILE
+              </b></p></h1>
+              <h3><p>
+                Vous avez besoins de trains réguliers programmés au départ de votre usine ? Ou des acheminements à destination et au départ des ports ?       </p></h3>
+              <h1><p><b>
+                Nous vous garantissons l’acheminement de vos véhicules au départ, de vos usines jusqu’aux ports et 
+                vice versa ou vers des plateformes de stockage et de distribution.
+              </b></p></h1>
+
+              <h1><p><b>
+                D’autres prestations annexes peuvent être réalisées, comme le stockage de vos voitures dans nos plateformes logistiques.
+              </b></p></h1>
+              <h1><p><b>
+                Notre service de transport des voitures par rail vous offre une grande possibilité qui répond aux besoins, des opérateurs économiques du secteur en garantissant :
+
+              </b></p></h1>
+              <p>> Le transport de 1500 voitures par jour dans de bonnes conditions de sécurité et de régularité</p>
+              <p>> La mise en place d’une solution sur mesure pour le transport de véhicules de l’usine Renault au port de Tanger Med</p>
+              <p>> Des connexions ferroviaires en amont et en aval avec des systèmes efficaces de chargement et déchargement des voitures.</p>
+              <img class="w-100" src="{%  static 'website/img/bg_img/Automobile2.jpg' %}" alt="">
+        </div>
+        <center><div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/56430/1297639/version/1/file/Conditions%20de%20vente.pdf" class="btn dento-btn booking-btn">Conditions de vente </a>
+            
+          </div></center>
+         <center> <div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/51506/1183359/version/1/file/Fiche%20des%20contacts.pdf" class="btn dento-btn booking-btn">Nos commerciaux à votre écoute </a>
+            
+          </div></center>
+          
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a ><img class="w-100" src="{%  static 'website/img/bg_img/Train-charge-de-voitures-au-port-tanger-med_gallery_item_large.jpg' %}" alt=""></a>
+              <p>Train chargé de voitures au Port Tanger Med</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Terminal-de-stockage-au-port-tanger-med_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Terminal de stockage au Port Tanger Med</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Wagon-porte-auto-au-port-tanger-med_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Wagon porte-auto au Port Tanger Med</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

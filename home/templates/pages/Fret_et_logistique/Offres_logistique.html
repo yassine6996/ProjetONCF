@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Offres logistiques  {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Fret-oncf-et-environnement.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Offres logistiques  </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Offres logistiques  </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      
+      
+
+        <h1><p><b>
+            Une réponse adaptée aux besoins des entreprises exportatrices
+          </b></p></h1>
+          <h1><p><b>
+            Depuis plusieurs années, seul ou en partenariat, l’ONCF déploie sa stratégie dans plusieurs directions : 
+            création de ports sous douane, construction de plateformes de stockage, transport par route, transport à 
+            l’international avec des transitaires choisis pour leurs compétences.
+            </b></p></h1>
+          <h1><p><b>
+            Grâce à ses nouvelles plateformes multimodales, inscrites dans le cadre de la stratégie nationale de compétitivité 
+            logistique, l’ONCF transporte, stocke et distribue. Tanger, Marrakech, Ain Sebaâ, Zenata, Fès, Oujda, Nador accueillent 
+            dès aujourd’hui ces nouvelles plateformes. Le stockage des conteneurs évite la saturation des ports et fait gagner du temps 
+            aux transitaires. Le port sec sous douane, qui offre les mêmes services qu’un port maritime, présente de nombreux avantages: 
+            la marchandise débarquée au port est tout de suite transférée au terminal ferroviaire ou port sec, et toutes les formalités 
+            douanières et administratives s’effectuent à destination. Pour le client, les opérations de réception ou de sortie du port 
+            sec sont rapides. Quant à l’immobilisation des marchandises en attente de formalités, elle est peu coûteuse et compétitive: 
+            quatorze jours de stockage sans frais au port sec, contre sept jours seulement dans les ports maritimes.
+            </b></p></h1>
+    
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

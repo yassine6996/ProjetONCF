@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}AL ATLAS {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/1profile_de_loncf.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">AL ATLAS  </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Entreprise' %}"><i class="fa fa-home"></i> Entreprise</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Profile_de_loncf' %}"><i class="fa fa-home"></i> Profile de l'ONCF</a></li>
+                <li class="breadcrumb-item active" aria-current="page">AL ATLAS </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p>AL ATLAS Fès – Casablanca –  Marrakech</p></h1>
+            
+            <p>Avec l'offre AL ATLAS, vivez une nouvelle expérience de voyage ! </p>  
+            <p>Grâce à la mise en service du doublement de la ligne Casablanca-Marrakech, l'ONCF lance la nouvelle offre AL ATLAS, avec plus de confort, d'attentions et de services adaptés à vos attentes, depuis votre réservation jusqu'à votre arrivée à votre destination.</p> 
+            <p>​L'offre AL ATLAS, ce sont des trains mis en circulation sur les axes de Casablanca-Fès et Casablanca-Marrakech avec de nouveaux services et une nouvelle tarification.</p> 
+           
+
+            <h1><p>AL ATLAS Tanger – Fès – Oujda – Nador  </p></h1>
+
+            <p>Des trains directs et une offre étoffée pour des voyages plus simples  et fluides </p>  
+            <p>Avec plus de trains, et des horaires mieux adaptés aux besoins des voyageurs, cette nouvelle offre est assurée par des liaisons directes sans correspondance, pour des voyages simples et fluides reliant Tanger à Fès, à Oujda et à Nador.</p> 
+            <p>Ainsi, les voyageurs de cet axe, bénéficient non seulement d’un confort amélioré à bord, grâce à la garantie de places assises numérotées en 2ème comme en 1ère Classe mais aussi des tarifs avantageux offrant des réductions systématiques si l’achat des billets est anticipé.</p> 
+           <p>Tous ces avantages sont disponibles également dans les trains de nuit reliant Casa à Oujda, Casa à Nador et ceux de Tanger à Marrakech.</p>
+           
+
+           <h1><p>
+            AL ATLAS Casa – Khouribga – Safi </p></h1>
+            
+            <p>Plus de confort, de fluidité et d'accessibilité !  </p>  
+            <p>A partir du 1er janvier 2020, les axes Casablanca – Khouribga et Benguerir – Safi intègrent l’offre AL ATLAS.AL ATLAS à Khouribga et Safi, c’est donc toujours plus de confort grâce à la réservation en 2ème classe, plus de fluidité grâce à des correspondances adaptées, et plus d’économies avec des prix attractifs et des réductions systématiques grâce à l’anticipation.</p> 
+           
+            </div>
+            
+        
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <img class="w-100" src="{%  static 'website/img/bg_img/Photo-atlass-vf.jpg' %}" alt="">
+              
+            </div>
+            <div class="single-widget-area adds-widget">
+                <img class="w-100" src="{%  static 'website/img/bg_img/Capture-vf_reference.png' %}" alt="">
+                
+              </div>
+            <div class="single-widget-area adds-widget">
+                <img class="w-100" src="{%  static 'website/img/bg_img/Generique-offre-khouribga-safi.png' %}" alt="">
+                
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

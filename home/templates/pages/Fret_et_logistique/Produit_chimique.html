@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Produits Chimiques {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Produits-chimiques.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Produits Chimiques  </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Offre_transport_logistique' %}"><i class="fa fa-home"></i> Offre_transport_logistique</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Produits Chimiques </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p><b>
+                Fret ONCF leaders dans le transport des produits chimiques
+              </b></p></h1>
+              <h3><p>
+                Vous opérez dans l’industrie de la chimie et vous voulez transporter
+                 votre marchandise en toute sécurité ? Venez vivre avec nous l’expérience réussie de l’OCP.             </p></h3>
+              <h1><p><b>
+                Nous transportons chaque année pour le compte de notre partenaire OCP, d’importantes quantités de produits chimiques :
+              </b></p></h1>
+              <p>> Souffre : importation via le port de Safi </p>
+              <p>> Acide phosphorique : Exportation du port de Safi vers le complexe industriel OCP </p>
+              <p>> Engrais : Exportation du port de Safi vers le complexe industriel OCP.</p>
+              <h3><p>
+                Nous mettons notre savoir-faire au service de notre partenaire pour l’accompagner dans son développement.            </p></h3>
+                <h3><p>
+                    Par ailleurs, l’OCP et l’ONCF ont signé un nouveau contrat pour la période 2016-2021, dans la lignée du 
+                    partenariat historique liant les deux opérateurs nationaux. Il s’agit d’un protocole d’accord visant à développer 
+                    des métiers de la logistique et à la valoriser des sites autour des gares.      </p></h3>
+              
+          
+                
+            
+        </div>
+        <center><div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/56430/1297639/version/1/file/Conditions%20de%20vente.pdf" class="btn dento-btn booking-btn">Conditions de vente </a>
+            
+          </div></center>
+         <center> <div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/51506/1183359/version/1/file/Fiche%20des%20contacts.pdf" class="btn dento-btn booking-btn">Nos commerciaux à votre écoute </a>
+            
+          </div></center>
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a ><img class="w-100" src="{%  static 'website/img/bg_img/Transport-d-acide-phosphorique_gallery_item_large.jpg' %}" alt=""></a>
+              <p>Transport d'acide phosphorique</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Acheminement-d-un-train-de-phosphate-de-5000-t_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Acheminement d'un train de phosphate de 5000T</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Transport-de-phosphate-axe-sud_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Transport de phosphate axe Sud</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Atouts   {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Atouts.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Atouts    </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Missions' %}"><i class="fa fa-home"></i>Savoir faire</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Atouts  </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Transporter, stocker et distribuer! </h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      
+
+        <h1><p><b>
+            Au-delà du transport, la prise en charge de tous types de marchandises est notre métier. L’écoute et la satisfaction des besoins de nos clients sont notre clé de réussite.
+          </b></p></h1>
+          
+          <h1><p><b>
+            Grâce à notre expertise et notre savoir faire, nous mettons à la disposition de nos partenaires des solutions spécifiques leur permettant 
+            l’optimisation de leurs chaînes logistiques, qui intègrent en plus du transport, des prestations à forte valeur ajoutée :     </b></p></h1>
+
+            
+          
+    <div class="container">
+        <div class="row">
+          <!-- Section Heading -->
+          <div class="col-12">
+            <div class="section-heading text-center">
+                <img src="{% static 'website/img/bg_img/Atoutsequipe.png' %}" alt="">
+            </div>
+          </div>
+        </div>  
+        </div>
+        </div>
+      </div>
+      
+    </div>
+   
+      
+   
+    </div>
+  </div>
+  
+</div>
+    
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

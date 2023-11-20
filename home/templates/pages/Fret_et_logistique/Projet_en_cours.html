@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Projets de développement en cours {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Gouvernance.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Projets de développement en cours </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Enquete_satisfaction_client' %}"><i class="fa fa-home"></i>Autres thematique</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Projets de développement en cours </li>>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Des projets dans le pipeline</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      
+
+        <h1><p><b>
+          Considéré comme un leader national de la logistique, ayant développé une expertise en la matière et 
+          en s’appuyant sur ses atouts intrinsèques, l’ONCF joue un important rôle dans la réussite des grands 
+          projets structurants issus des stratégies sectorielles du Royaume.
+          </b></p></h1>
+
+      <h1><p><b>
+        A ce titre, il est important de mettre l’accent sur le facteur de différenciation indéniable que 
+        procure la connexion ferroviaire aux anciens et nouveaux ports comme celui de Nador West Med, Safi 
+        et Kenitra, la liaison ferroviaire aux centrales thermiques en cours de construction et aux grandes 
+        unités de production installées où qui s’installeront au niveau des plateformes industrielles (Renault, 
+        PSA, cimenterie, …etc.). Cette intégration de la composante ferroviaire dans les chaînes logistiques 
+        induites par ces projets leur assurera un avantage compétitif de taille.
+      </b></p></h1>
+      <h1><p><b>
+        Pour se faire, l’Office adopte une stratégie ciblée en matière de Fret et logistique pour continuer à 
+        développer ses marchés porteurs, et tout particulièrement ceux du transport de voitures à l’export et à 
+        l’import, du transport des produits énergétiques.
+      </b></p></h1>
+      <h1><p><b>
+        En effet, la réussite du modèle de développement du transport de voitures pour le compte de « RENAULT » 
+        au port Tanger-Med, a incité le groupe automobile « PSA » à dupliquer le même schéma entre leur usine à Kenitra et le NP Kénitra.
+      </b></p></h1>
+      
+      <h1><p><b>
+        En outre, l’ONCF poursuit la mise en œuvre de ses plans logistiques céréaliers et hydrocarbures soit à travers la connexion au rail 
+        des silos à céréales d’importants clients de Fès (Transitique et El Alf et autres clients importateurs de céréales), soit par le 
+        transport des hydrocarbures sur de nouvelles destinations, comme le gasoil sur l’Oriental et sur Sidi Bouatman, région de Marrakech 
+        réalisé pour le compte d’AFRIQUIA.
+      </b></p></h1>
+      <h1><p><b>
+        Par ailleurs, et pour accompagner l’extension de la centrale thermique de Jerrada (ONEE) qui a doublé sa capacité de production en 2018, 
+        l’ONCF a mis en place une logistique conséquente visant à transférer depuis le port de Nador un volume annuel d’un million de tonnes de charbon.
+      </b></p></h1>
+      <h1><p><b>
+        Concernant le secteur d’activité des BTP, une desserte ferroviaire de la zone de stockage de charbon à l’usine Ben Ahmed, a été réalisée pour 
+        le compte de CIMAT et qui portera à terme sur Un millions de Tonnes.
+      </b></p></h1>
+    <div class="container">
+        <div class="row">
+          <!-- Section Heading -->
+          <div class="col-12">
+            <div class="section-heading text-center">
+                <img src="{% static 'website/img/bg_img/Psa-premier-train-de-voitures-entre-kenitra-atlantic-et-tanger-med.jpg' %}" alt="">
+                <img src="{% static 'website/img/bg_img/Afriquia-premier-train-commercial-des-hydrocarbures-entre-jorf-lasfar-et-sidi-bou-athmane.jpg' %}" alt="">
+            </div>
+          </div>
+        </div>  
+        </div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

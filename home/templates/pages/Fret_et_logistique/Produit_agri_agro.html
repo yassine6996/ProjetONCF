@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Produits agri-agro  {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Produits-agri-agro.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Produits agri-agro   </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Offre_transport_logistique' %}"><i class="fa fa-home"></i> Offre_transport_logistique</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Produits agri-agro    </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p><b>
+                DES SOLUTIONS LOGISTIQUES ADAPTÉES AU SECTEUR AGRI-AGRO
+              </b></p></h1>
+              <h3><p>
+                Vous recherchez une solution de transport rapide et optimale pour vos produits agricoles et agro-alimentaires ? 
+                Fret ONCF vous propose des prestations fiables et adaptées à vos impératifs.     </p></h3>
+              <h1><p><b>
+                Nous vous offrons des dégagements massifiés pendant les campagnes céréalières, et des approvisionnements de vos usines depuis le port. 
+                Nous mettons également à votre disposition un parc de 400 wagons en rotation illimitée
+              </b></p></h1>
+
+              <h1><p><b>
+                En plus avec notre <a href="https://www.oncf.ma/fr/content/download/51494/1183323/file/PLAN%20LOGISTIQUE%20CEREALIER%20final.pdf">Plan Logistique Céréalier (PLC)</a>, nous vous assurons la connexion au rail des silos à céréales d’importants clients. Ce PLC prévoit 
+                la construction de silos de stockage des céréales sur des plateformes connectées au réseau ferroviaire offrant plusieurs avantages :
+              </b></p></h1>
+              <p>> L’extension des capacités de stockage</p>
+              <p>> Le transport direct de bout en bout grâce à la connexion des sites à la voie ferrée</p>
+              <p>> Une meilleure organisation des transports par des envois en masse</p>
+              <p>> Une compétitivité améliorée par une meilleure maîtrise de la chaîne logistique</p>
+              <p>> Une contribution à la préservation de l’environnement.</p>
+              <img class="w-100" src="{%  static 'website/img/bg_img/Agri-agro.jpg' %}" alt="">
+        </div>
+        <center><div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/56430/1297639/version/1/file/Conditions%20de%20vente.pdf" class="btn dento-btn booking-btn">Conditions de vente </a>
+            
+          </div></center>
+         <center> <div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/51506/1183359/version/1/file/Fiche%20des%20contacts.pdf" class="btn dento-btn booking-btn">Nos commerciaux à votre écoute </a>
+            
+          </div></center>
+          
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a ><img class="w-100" src="{%  static 'website/img/bg_img/Formation-d-un-train-de-cereales_gallery_item_large.jpg' %}" alt=""></a>
+              <p>Formation d’un train de céréales</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Acheminement-d-un-train-cereales-de-la-gare-de-triage_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Acheminement d’un train céréales de la gare de triage </p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Mise-a-disposition-du-train-chez-le-client-final_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Mise à disposition du train chez le client final</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

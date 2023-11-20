@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}En gares {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Gouvernance.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">En gares </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Entreprise' %}"><i class="fa fa-home"></i> Entreprise</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Profile_de_loncf' %}"><i class="fa fa-home"></i> Profile de l'ONCF</a></li>
+                <li class="breadcrumb-item active" aria-current="page">En gares </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Des espaces de vie multiservices et multifonctionnels…</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    
+      <h3><p><b>
+        Soucieux d’offrir des produits et des services innovants, l’ONCF réalise un ambitieux programme de modernisation et de construction 
+        de gares ferroviaires, grandes, moyennes et petites, marquant ainsi la rupture avec la conception traditionnelle des gares comme 
+        simples points de transit des voyageurs.
+      </b></p></h3>
+      <h3><p><b>
+        Dans le cadre de ce programme, l’ONCF a procédé durant la période 2010-2017 à la modernisation et à la construction de plus de 40 gares. 
+        Selon ce nouveau concept, ces édifices s’intègrent harmonieusement dans l’environnement urbanistique des villes et se positionnent comme
+         espaces multifonctionnels offrant des services diversifiés â même de satisfaire au mieux les attentes des voyageurs et des visiteurs.
+      </b></p></h3>
+      <h3><p><b>
+        Les objectifs visés étant d’améliorer les conditions d’accueil et de confort des voyageurs, de faire face à la progression du trafic des voyageurs, 
+        d’accompagner le développement urbain des villes, et stimuler la dynamique du tissu urbain autour des gares et de valoriser et optimiser l’utilisation 
+        du patrimoine ferroviaire.
+      </b></p></h3>
+      <h3><p><b>
+        À noter que ces édifices sont dotés de toutes les commodités nécessaires et abritent des centres commerciaux offrant de multiples services et ce, en plus des activités liées
+         aux voyageurs (billetterie, salles d’attente, cafés, restaurants, mosquées, enseignes de shopping…) et des aménagements extérieurs en harmonie avec leur environnement : esplanades, 
+         espaces verts, stations taxis, parkings…
+      </b></p></h3>
+      <h3><p><b>
+        Ils comprennent également des équipements et des installations à la pointe de la technologie : affichage électronique des horaires des trains, vidéosurveillance, détection d’incendie, sonorisation, affichage publicitaire, ...
+      </b></p></h3>
+      <h3><p><b>
+        En outre, ces gares sont équipées d’installations nécessaires à même de faciliter l’accessibilité aux personnes à mobilité réduite et leur offrir des services adaptés à leurs besoins spécifiques : 
+        rampes d’accès aux parkings et aux passages souterrains, places de stationnement de voitures, guichets spécial, sanitaires dédiés, …
+      </b></p></h3>
+      </div>
+      <div class="container">
+      <img src="{%  static 'website/img/bg_img/engares.png' %}" alt="">
+    
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

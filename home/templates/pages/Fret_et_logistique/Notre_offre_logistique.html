@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Offres logistiques  {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Fret-oncf-et-environnement.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Notre offre d’appui logistique </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Offres_logistique' %}"><i class="fa fa-home"></i>Offres logistiques </a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Notre offre d’appui logistique   </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+              <div class="section-heading text-center">
+                <h2>Des solutions logistiques sur mesure</h2>
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+
+        <h1><p><b>
+            Vous souhaitez bénéficier d’une prise en charge complète de vos marchandises ?
+          </b></p></h1>
+          <h1><p><b>
+            FRET ONCF vous propose différentes offres d’appui logistique en complément du transport ferroviaire.
+            </b></p></h1>
+          <h1><p><b>
+            Nos experts métiers, vous assureront des propositions de différentes prestations logistiques : 
+            ferroviaire, routière, manutention, entreposage et d’autres services annexes en fonction de vos 
+            besoins de transport. Selon la nature et le volume de vos marchandises, nous organisons avec vous 
+            la prestation la plus adaptée.
+            </b></p></h1>
+            <h1><p><b>
+                FRET ONCF met à votre disposition des moyens de manutention ainsi que des entrepôts reliés au 
+                réseau ferré et routier pour stocker vos marchandises :
+                </b></p></h1>
+            <p>> Stockage des conteneurs sous et hors douane </p>
+            <p>> Mise à disposition d’engins de manutention</p>
+            <p>> Entreposage (stockage, manutention, gestion de stock, gestion de commande) </p>
+            <p>> Organisation de transport routier </p>
+            <p>> Opérations de transit…</p>
+            <div class="single-skills-area mt-30">
+                <a href="{% url 'Mita_casa' %}" class="btn dento-btn booking-btn">Mita Casablanca    </a>
+                <a href="{% url 'Bensouda_Fes' %}" class="btn dento-btn booking-btn">       Bensouda Fes     </a>
+                <a href="{% url 'Sidi_ghanem' %}" class="btn dento-btn booking-btn">      Sidi Ghanem Marrakech</a>
+              </div>
+<p></p>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Missions  {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Missions.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Missions   </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Missions' %}"><i class="fa fa-home"></i>Savoir faire</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Missions </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Le train est l’avenir du fret et logistique! </h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      
+
+        <h1><p><b>
+            DES CHANTIERS D’ENVERGURE, POUR QUELLE FINALITE ?
+          </b></p></h1>
+          
+          <h1><p><b>
+            En plus de ses nombreux atouts intrinsèques pour la collectivité : transport de masse, respect de l’environnement, 
+            économie d’espace et d’énergie… le fret ONCF a intégré la logistique à son métier de transporteur et se positionne
+             comme un acteur logisticien de référence au Maroc et un opérateur global, maitrisant toute la chaîne de valeur. 
+             L’objectif étant de répondre efficacement aux attentes évolutives des opérateurs économiques et d’accompagner activement 
+             la concrétisation de la stratégie nationale de compétitivité logistique.       </b></p></h1>
+
+            <h1><p><b>
+                Grâce à des équipes professionnelles dédiées et à une politique de proximité, l’ONCF vous assure au quotidien :
+
+
+              
+          
+    <div class="container">
+        <div class="row">
+          <!-- Section Heading -->
+          <div class="col-12">
+            <div class="section-heading text-center">
+                <img src="{% static 'website/img/bg_img/Missionsequipe.png' %}" alt="">
+            </div>
+          </div>
+        </div>  
+        </div>
+        </div>
+      </div>
+      
+    </div>
+   
+      
+    </div>
+  </div>
+  
+</div>
+    
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

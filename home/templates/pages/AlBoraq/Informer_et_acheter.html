@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Informer et acheter{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/1profile_de_loncf.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">S'informer et acheter </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'AlBoraq' %}"><i class="fa fa-home"></i> AlBoraq</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Informer_et_acheter' %}"><i class="fa fa-home"></i> Services</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Informer et acheter</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            <blockquote cite="" class="dento-blockquote d-flex">
+                <div class="icon">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="text">
+                  <h5>LSites Internet, gares ou Distributeurs Automatiques de Tickets (DAT), 
+                    l’ONCF met à votre disposition, différents moyens pour préparer et gérer facilement votre voyage avec Al Boraq.</h5>
+                </div>
+              </blockquote>
+            
+
+            
+            <p>Préparez facilement votre voyage sur <a href="https://www.oncf-voyages.ma/">www.oncf-voyage.ma</a>. Achetez votre billet en ligne en quelques clics avec votre carte bancaire via votre téléphone mobile ou ordinateur.</p>
+            <p>  Vous pouvez également échanger ou annuler votre billet, et créer votre compte client pour gérer simplement vos déplacements, recevoir les notifications sur le trafic et la newsletter et profiter des meilleures offres sans vous déplacer.              
+            </p>  
+            <p>Juste après votre achat, vous recevez votre confirmation e-billet par mail. Vous pouvez l’imprimer quand vous le souhaitez, jusqu’au départ de votre train.  </p>
+            <p>
+                En cas de perte, vous pouvez réimprimer votre confirmation autant de fois que nécessaire.  
+            </p>
+            <p>
+                Besoin d’informations ? Appelez le 22-55. Nos téléconseillers dédiés sont disponibles 7j/7 et 24h/24h.
+            </p>
+            <p>
+                Vous pouvez acheter votre billet aux guichets et aux Distributeurs Automatiques de Tickets (DAT). Carte bancaire, chèque, espèces… Vous pouvez régler votre billet selon le moyen de paiement qui vous convient.
+            </p>
+            <p>
+                Pour mieux vous servir, un nouveau concept de billetterie a été déployé dans les gares Grande Vitesse. Un vendeur animateur vous oriente, vers un guichet ‘Départ immédiat’ ou vers un guichet ‘Préparation de voyage’ en fonction de votre date de départ et parcours.   
+
+            </p>
+            
+            </div>
+            
+        
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+                <img src="{% static 'website/img/bg_img/Espace-de-vente-1.jpg' %}" alt="">
+              
+            </div>
+            <div class="single-widget-area adds-widget">
+                <img src="{% static 'website/img/bg_img/Espace-de-vente-1.jpg' %}" alt="">
+              </div>
+            <div class="single-widget-area adds-widget">
+                <img src="{% static 'website/img/bg_img/Espace-de-vente-1.jpg' %}" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

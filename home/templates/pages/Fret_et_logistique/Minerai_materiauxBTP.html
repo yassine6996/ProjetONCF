@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Minerais et matériaux BTP  {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Minerais-et-materiaux-btp.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Minerais et matériaux BTP   </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Offre_transport_logistique' %}"><i class="fa fa-home"></i> Offre_transport_logistique</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Minerais et matériaux BTP  </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p><b>
+                UNE MASSIFICATION DE VOS FLUX
+              </b></p></h1>
+              <h3><p>
+                Vous voulez transporter du calcaire, du ciment, de l’argile... ? Ou encore des produits de fer comme des produits longs, de la couronne ou des bobines… ?            </p></h3>
+              <h1><p><b>
+                Nous vous offrons une adaptation spécifique à votre produit tout en veillant sur les caractéristiques de base de FRET ONCF : massification, 
+                adaptation de la logistique, livraison des marchandises vers vos sites industriels, plateformes de stockage ou sur les chantiers...
+              </b></p></h1>
+
+              <h3><p>
+                Qu’il s’agit de produits issus des mines, des aciéries, des cimenteries... Nous œuvrons à répondre au mieux à vos besoins du point de chargement au point de déchargement qui vous convient.       </p></h3>
+       
+              
+          
+                
+            
+        </div>
+        <center><div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/56430/1297639/version/1/file/Conditions%20de%20vente.pdf" class="btn dento-btn booking-btn">Conditions de vente </a>
+            
+          </div></center>
+         <center> <div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/51506/1183359/version/1/file/Fiche%20des%20contacts.pdf" class="btn dento-btn booking-btn">Nos commerciaux à votre écoute </a>
+            
+          </div></center>
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a ><img class="w-100" src="{%  static 'website/img/bg_img/Station-de-chargement-de-wagons-de-charbon_gallery_item_large.jpg' %}" alt=""></a>
+              <p>Station de chargement de wagons de charbon</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Mise-en-place-du-train-de-charbon-pour-chargement_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Mise en place du train de charbon pour chargement</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Chargement-wagon-charbon_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Chargement wagon charbon</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

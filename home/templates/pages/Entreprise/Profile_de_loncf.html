@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Profile de l'ONCF{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/1profile_de_loncf.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Présentation du groupe </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Entreprise' %}"><i class="fa fa-home"></i> Entreprise</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Profile de l'ONCF</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <img src="{% static 'website/img/bg_img/1profile_de_loncf.png' %}" alt="">
+
+            
+            <p>Pour atteindre ses objectifs de développement, l’ONCF a mis en place des plans d’investissements conséquents, qui ont permis de tripler le nombre de voyageurs et d’augmenter le fret de 30 % en 15 ans depuis l’an 2000.</p>
+            <p>                Entre 2005 et 2009, 400km de nouvelles voies ferrées au profit de pôles économiques non ralliés au rail ont été construits, 400km de voie et caténaires ont été renouvelés, 300km de voies été électrifiés, les gares ont été modernisées, et de nouvelles rames et locomotives ont été acquises.
+            </p>  
+            <p>Entre 2010 et 2015, l’ONCF a mis en place un nouveau cycle de développement qui s’articule autour de trois types d’opérations en phase avec les axes stratégiques définis par le Ministère de l’Équipement et des Transports, à savoir:</p>
+            <p>
+                Des grands chantiers structurants à fortes retombées, visant à pérenniser et à accroître la compétitivité du rail, comme la construction du TGVM Casablanca-Tanger, l’augmentation de la capacité de la ligne entre Casablanca-Kenitra, le doublement partiel de la voie entre Settat-Marrakech, la mise à niveau de la ligne de l’Oriental et l’acquisition de matériel roulant
+            </p>
+            <p>
+                Des projets de compétitivité logistique comme la création de nouvelles gares Fret, réalisation d’embranchements particuliers et l acquisition du matériel roulant
+            </p>
+            <p>
+                Des projets de mobilité et de transport durable à savoir la mise à niveau de l’infrastructure, la modernisation des gares, l’amélioration de l’environnement du travail et la réhabilitation du matériel roulant
+            </p>
+            <p>
+                En 2017, le budget prévoit une hausse de 3,3 % pour le transport ferroviaire des voyageurs et de 2,3 % pour celui du segment fret/logistique.
+
+            </p>
+            <blockquote cite="" class="dento-blockquote d-flex">
+              <div class="icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="text">
+                <h5>Les investissements ont été concentrés sur le projet de ligne à grande vitesse (LGV) et la poursuite de la modernisation du réseau conventionnel.</h5>
+              </div>
+            </blockquote>
+            </div>
+            
+        
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Gouvernance_Profile.png' %}" alt=""></a>
+              <p>Gouvernance</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Missions_valeurs_Profile.png' %}" alt=""></a>
+                <p>Mission & valeurs</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Historique_Profile.png' %}" alt=""></a>
+                <p>Historique</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

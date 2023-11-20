@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Nos prix{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Gouvernance.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Nos prix</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'AlBoraq' %}"><i class="fa fa-home"></i> AlBoraq</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Voyagez_meilleur_prix' %}"><i class="fa fa-home"></i> Tarifs et refuction</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Nos prix</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Que ce soit en 1ère ou en 2ème classe, achetez votre billet à l’avance pour profiter de prix attractifs</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      
+
+        <h1><p><b>
+            La vente des billets est ouverte 3 mois à l’avance. Plus vous anticipez vos voyages, plus vous bénéficiez de tarifs attractifs.
+          </b></p></h1>
+
+      <h1><p><b>
+        N’hésitez pas pour profiter des meilleurs prix pour un confort optimal.
+      </b></p></h1>
+      
+    <div class="container">
+        <div class="row">
+          <!-- Section Heading -->
+          <div class="col-12">
+            <div class="section-heading text-center">
+                <img src="{% static 'website/img/bg_img/Tableau-prix-1.jpg' %}" alt="">
+                <div class="single-skills-area mt-30">
+                    <a href="https://www.oncf-voyages.ma/" class="btn dento-btn booking-btn">En profiter !</a>
+                    
+                  </div>
+              <div ></div>
+            </div>
+          </div>
+        </div>
+      
+        
+        </div>
+        
+      
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

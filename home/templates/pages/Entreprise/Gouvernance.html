@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Gouvernance{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Gouvernance.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Gouvernance</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Entreprise' %}"><i class="fa fa-home"></i> Entreprise</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Profile_de_loncf' %}"><i class="fa fa-home"></i> Profile de l'ONCF</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Gouvernance</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Un système en amélioration continue</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    
+      <h3><p><b>Tout en se conformant aux dispositions du code marocain des bonnes pratiques de gouvernance des entreprises et des établissements publics, 
+        le mode de gouvernance de l’ONCF vise à optimiser la gestion globale de l’entreprise, en responsabilisant les acteurs d’une part et en séparant 
+        le pilotage stratégique du pilotage opérationnel. Il repose sur des organes d’administration et de contrôle ainsi que sur des instruments de gouvernance.</b></p>
+    
+    </h3>
+      </div>
+      <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Organigramme</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    
+      <h3><p><b>L’ONCF est organisé en pôles opérationnels et directions de supports dans le souci de focaliser au quotidien ses énergies vers la satisfaction de sa clientèle. 
+        Constituant une condition préalable pour s’engager dans la voie du progrès et de l’excellence, ce mode de fonctionnement permet :</b></p>
+    <h3><p><b>   >  La clarification des responsabilités et l’instauration d’un mode de gestion par objectif, en responsabilisant les activités sur leurs performances commerciales et l’optimisation de leurs moyens </b></p></h3>
+    </h3>
+    <h3><p><b>
+        >  Le rapprochement du niveau décisionnel du terrain, à travers une forte action de décentralisation pour pouvoir répondre efficacement aux impératifs de la régionalisation.
+    </b></p></h3>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

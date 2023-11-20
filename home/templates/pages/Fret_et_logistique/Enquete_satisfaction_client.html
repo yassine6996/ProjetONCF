@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Enquête Satisfaction Clients{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Gouvernance.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Enquête Satisfaction Clients</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Enquete_satisfaction_client' %}"><i class="fa fa-home"></i>Autres thematique</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Enquete satisfaction client</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** About Us Area Start ******* -->
+  
+
+  <!-- Cool Facts Area Start -->
+  
+  <!-- Cool Facts Area End -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  
+    
+  
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>73 % DE NOS CLIENTS SONT SATISFAITS </h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      
+
+        <h1><p><b>
+            Chaque année, l’activité Fret et Logistique, réalise une étude de satisfaction clients dont l’objectif est de mesurer 
+            la qualité de service rendu au client, de se positionner par rapport à la concurrence, d’être à l’écoute pour mieux 
+            répondre aux exigences et attentes du marché.
+          </b></p></h1>
+
+      <h1><p><b>
+        Les clients nous jugent sur sept axes d’évaluation. Ainsi par rapport aux résultats de l’enquête de satisfaction clients 
+        menée au titre de l’exercice 2018 ; Cette vague révèle que 73% des clients ONCF Fret sont satisfaits des prestations 
+        réalisées dans le cadre du transport ferroviaire de marchandises. La relation commerciale et le respect de l’environnement 
+        obtiennent les meilleurs niveaux de satisfaction.
+      </b></p></h1>
+      <h1><p><b>
+        Aussi, 79% des clients ONCF -Fret expriment de fortes intentions de fidélité à l’ONCF et de prescription à l’égard de l’ONCF. 
+      </b></p></h1>
+      
+    
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+{% endblock %}

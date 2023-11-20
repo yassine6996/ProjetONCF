@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}AlBoraq{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Al-boraq.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Decouvrez le voyage avec AlBoraq </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">AlBoraq</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <img src="{% static 'website/img/bg_img/futterback.jpg' %}" alt="">
+
+            
+            <p>Al Boraq: Get on board !</p>
+            <p> Quelle que soit votre ville de départ ou de destination, il y a toujours un train Al Boraq pour vous !               
+            </p>  
+            <p>Avec des liaisons plus courtes et plus fréquentes, Al Boraq relie les villes de 
+                Casablanca à Tanger et dessert les gares de Casa Voyageurs, Rabat Agdal, Kenitra et Tanger.</p>
+            <p>
+                Il dessert également plusieurs autres villes du Royaume moyennant des correspondances.
+            </p>
+                <div class="single-skills-area mt-30">
+                <center><a href="{% url 'Destinations' %}" class="btn dento-btn booking-btn">Destinations</a></center>
+                
+              </div>
+              <p></p>
+              <img src="{% static 'website/img/bg_img/Al-boraq.png' %}" alt="">
+
+            
+              <p>Votre guide du voyageur</p>
+              <p> Plus qu’un train. Al Boraq, une nouvelle expérience du voyage.               
+              </p>  
+              <p>Téléchargez le guide du voyageur pour avoir toutes les informations sur les horaires du train, 
+                les destinations qu’il dessert, les tarifs et prix qui vous conviennent le plus, ainsi que tous 
+                les services en gares et à bord d’Al Boraq.
+              </p>
+              <div class="single-skills-area mt-30">
+                <center><a href="{% url 'https://www.oncf.ma/en/content/download/38549/881715/version/4/file/Guide%20du%20voyageur%20Al%20Boraq%20web%20MAJ.pdf' %}" class="btn dento-btn booking-btn">Guide du voyageur Al Bouraq</a></center>
+                
+              </div>
+            </div>
+            
+        
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Services-en-gare.jpg' %}" alt=""></a>
+              <p>Service en gare</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Futterback.jpg' %}" alt=""></a>
+                <p>Services a bord</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Cafeteria.jpg' %}" alt=""></a>
+                <p>Cafeteria</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

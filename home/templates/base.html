@@ -1,0 +1,346 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>{% block title %}Dento - Dentist  {% endblock %}</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="{% static 'website/img/core_img/favicon1.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'website/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="https://www.google.com/maps/search/8+Bis,+Rue+Abderrahmane+El+Ghafiki,+Agdal+-+Rabat/@33.9991798,-6.8566894,15z/data=!3m1!4b1?entry=ttu" data-toggle="tooltip" data-placement="bottom" title="8 Bis, Rue Abderrahmane El Ghafiki, Agdal - Rabat"><i class="fa fa-map-marker"></i> <span>8 Bis, Rue Abderrahmane El Ghafiki, Agdal - Rabat</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="communication.digitale@oncf.ma"><i class="fa fa-envelope"></i> <span>communication.digitale@oncf.ma</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://www.facebook.com/oncfpageofficielle" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/oncfgroup" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://fr.linkedin.com/company/office-national-des-chemins-de-fer-oncf" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@ONCFOfficiel" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'Entreprise' %}"><img src="{% static 'website/img/core_img/logo1.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'Entreprise' %}">Entreprise</a>
+                    <ul class="dropdown">
+                      <li ><a href="{% url 'Profile_de_loncf' %}">- Profile de l'ONCF</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Missions_valeurs' %}">- Missions & valeurs</a></li>
+                          <li><a href="{% url 'Gouvernance' %}">- Gouvernance</a></li>
+                          <li><a href="{% url 'Chiffre_cle' %}">- Chiffres cles</a></li>
+                          <li><a href="{% url 'Historique' %}">- Historique</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-down"><a href="{% url 'Faire_carriere' %}">- Faire carriere a l'ONCF</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Capital_Humain' %}">- Capital humain</a></li>
+                          <li><a href="{% url 'Transformation_digitale' %}">- Transformation digitale</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- RSE</a></li>
+                          <li><a href="{% url 'Filiale' %}">- Filiales</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Recrutement</a></li>
+                          <li><a href="https://e-rh.oncf.ma/">- E-RH</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'Entreprise' %}">- Fournisseurs</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Charte_achats' %}">- Charte Achats</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Nos achats</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Apples d'offres</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Espace fournisseurs</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- S'inscrire</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- E-RH</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Documents achats</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'Entreprise' %}">Voyageurs</a>
+                    <ul class="dropdown">
+                      <li ><a href="{% url 'Entreprise' %}">- Offres voyageurs</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'AlAtlas' %}">- AL ATLAS</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Trains navettes rapides</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Trains grandes lignes</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- rains de nuit</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Train du desert</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Transport rail-route</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-down"><a href="{% url 'Entreprise' %}">- Produits</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Carte_smart_navette' %}">- Carte Samart Navette</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Carte Navette</a></li>
+                          <li><a href="{% url 'Carte_senior' %}">- Carte senior</a></li>
+                          <li><a href="{% url 'Carte_jeune' %}">- Carte Jeune</a></li>
+                          <li><a href="{% url 'Carte_attalib' %}">- Carte Attalib</a></li>
+                          <li><a href="{% url 'Carte_10ZEN' %}">- Carte 10'ZEN</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'Entreprise' %}">- Services</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Entreprise' %}">- Train+Auto</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Chatbot</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- ONCF TAXI</a></li>
+                          <li><a href="{% url 'ONCF_trafic' %}">- ONCF TRAFIC</a></li>
+                          <li><a href="{% url 'Canneaux_de_vente' %}">- Canaux de vente</a></li>                          
+                          <li><a href="{% url 'Entreprise' %}">- Systeme de reservation de voyage</a></li>                  
+                          <li><a href="{% url 'Engares' %}">- En gars</a></li>
+                          <li><a href="{% url 'Personne_mobilite_reduite' %}">- Personnes a mobilite reduite</a></li>
+                          <li><a href="{% url 'Entreprise' %}">- Relation Client</a></li>                       
+                        </ul>
+                      </li>
+                    </ul>                      
+                  </li>
+                  <li><a href="{% url 'Fret_logistique' %}">Frais et logistique</a>
+                    <ul class="dropdown">
+                      <li ><a href="{% url 'Missions' %}">- Savoir faire</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Missions' %}">- Missions</a></li>
+                          <li><a href="{% url 'Atouts' %}">- Atouts</a></li>
+                          <li><a href="{% url 'Fret_chiffres' %}">- Fret en chiffres</a></li>
+                          <li><a href="{% url 'Transport_rail_route' %}">- Transport rail-route</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-down"><a href="{% url 'Offre_transport_logistique' %}">- Offres de transport et logistique </a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Produit_chimique' %}">- Produits Chimiques</a></li>
+                          <li><a href="{% url 'Minerai_materiauxBTP' %}">- Minerais et materiaux BTP</a></li>
+                          <li><a href="{% url 'Energie' %}">- Energie</a></li>
+                          <li><a href="{% url 'Automobile' %}">- Automobile</a></li>
+                          <li><a href="{% url 'Produit_agri_agro' %}">- Produits agri-agro</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'Offres_logistique' %}">- Offre logistiques</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Notre_offre_logistique' %}">- Notre offre d'appui logistique</a></li>
+                          <li><a href="{% url 'Mita_casa' %}">- MITA Casablanca</a></li>
+                          <li><a href="{% url 'Bensouda_Fes' %}">- Bensouda Fes</a></li>
+                          <li><a href="{% url 'Sidi_ghanem' %}">- Sidi Ghanem Marrakech</a></li>                                                
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'Enquete_satisfaction_client' %}">- Autres thematiques</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Enquete_satisfaction_client' %}">- Enquete Satisfaction Clients</a></li>
+                          <li><a href="{% url 'Fret_Environnement' %}">- Fret ONCF et Environnement</a></li>
+                          <li><a href="{% url 'Projet_en_cours' %}">- Projets de development en cours</a></li>                                               
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'Developpement' %}">Development</a>
+                    <ul class="dropdown">
+                      <li ><a href="{% url 'Vision' %}">- Strategie</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Vision' %}">- Vision</a></li>
+                          <li><a href="{% url 'Axes_strategique' %}">- Axes strategiques</a></li>
+                          <li><a href="{% url 'Plan_rail' %}">- Plan Rail Maroc</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-down"><a href="{% url 'Projet_structurant' %}">- Grands Projets </a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Projet_structurant' %}">- Projets structurants</a></li>
+                          <li><a href="{% url 'Ligne_grande_vitesse' %}">- Ligne a grande vitesse Tanger-Casa</a></li>
+                          <li><a href="{% url 'Triplement_casa_kenitra' %}">- Triplement Casa-Marrakech</a></li>
+                          <li><a href="{% url 'Doublement_casa_marrakesh' %}">- Doublement_casa_marrakesh</a></li>
+                          <li><a href="{% url 'Securite_surete' %}">- Securite et surete</a></li>
+                          <li><a href="{% url 'Gares' %}">- Gares</a></li>
+                          <li><a href="{% url 'Desaturation' %}">- Desaturation</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-down"><a href="{% url 'AlBoraq' %}">Al'Bouraq</a>
+                    <ul class="dropdown">
+                      <li ><a href="{% url 'Destinations' %}">- Destinations et horaires</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Destinations' %}">- Destinations</a></li>
+                        </ul>
+                      </li>     
+                      <li class="has-down"><a href="{% url 'Voyagez_meilleur_prix' %}">- Tarifs et reductions</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Voyagez_meilleur_prix' %}">- Voyagez au meilleur prix!</a></li>
+                          <li><a href="{% url 'Nosprix' %}">- Nos prix</a></li>
+                          <li><a href="{% url 'Nos_abonnement' %}">- Nos abonnement</a></li>
+                          <li><a href="{% url 'Voyagez_ptit_prix' %}">- Voyagez a petit prix au tarif YALLA AL'BORAQ</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'Informer_et_acheter' %}">- Services</a>
+                        <ul class="dropdown">
+                          <li><a href="{% url 'Informer_et_acheter' %}">- S'informer et acheter</a></li>
+                          <li><a href="{% url 'Reservation' %}">- Reservation</a></li>
+                          <li><a href="{% url 'Service_en_gars' %}">- Services en gare</a></li>
+                          <li><a href="{% url 'ServiceBord' %}">- Services a bord</a></li>                      
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="https://www.oncf-voyages.ma/" class="btn dento-btn booking-btn">Booking Now</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  {% block content%}<!--Page Content Will Show Here-->{% endblock %}
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay"  style="background-image: url({% static 'website/img/bg_img/futterback.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'Entreprise' %}" class="d-block mb-4"><img src="{% static 'website/img/core_img/logo1.png' %}" alt=""></a>
+            <p>More infos</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> 8 Bis, Rue Abderrahmane El Ghafiki, Agdal - Rabat</p>
+              <p><i class="icon_phone"></i> 2255</p>
+              <p><i class="icon_mail"></i>  communication.digitale@oncf.ma</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Link</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Newsletter</h5>
+
+            <p>We will send out weekly newest article and some great offers</p>
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <form action="#" method="post">
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="https://www.facebook.com/oncfpageofficielle" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/oncfgroup" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://fr.linkedin.com/company/office-national-des-chemins-de-fer-oncf" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@ONCFOfficiel" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>©ONCF - TOUS DROITS RÉSERVÉS <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">yassine</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

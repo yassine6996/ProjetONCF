@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Historique{% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/1profile_de_loncf.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Historique </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Entreprise' %}"><i class="fa fa-home"></i> Entreprise</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Profile_de_loncf' %}"><i class="fa fa-home"></i> Profile de l'ONCF</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Historique</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p>Une histoire qui se lit sur nos lignes</p></h1>
+            
+            <p>La construction du réseau des chemins de fer du Maroc remonte au début du 20ème siècle. Les premières lignes construites à voie de 0,60m datent de 1916, 
+                et ce n’est qu’en 1923 que la construction des voies à écartement dit « normal » a été confiée à trois compagnies concessionnaires privées :
+            </p>  
+            <p>>        La Compagnie des Chemins de Fer du Maroc (CFM) qui exploitait la ligne du Sud à partir de Sidi Kacem et la ligne Fès-Oujda </p>
+            <p>>        La Compagnie des Chemins de Fer du Maroc Oriental (CMO) qui exploitait la ligne Bouarfa-Oujda 
+            </p>
+            <p>>        La compagnie Franco-Espagnole du Chemin de fer de Tanger-Fès (TF) qui exploitait l’axe Tanger-Fès.   
+            </p>
+            <p>
+                Ces compagnies concessionnaires se partagèrent le trafic ferroviaire, en exploitant chacune la partie du réseau qui lui était concédée, jusqu’en 1963, 
+                lorsque le Gouvernement Marocain a décidé le rachat des concessions et la création de l’Office National des Chemins de Fer (ONCF).
+            </p>
+
+            <blockquote cite="" class="dento-blockquote d-flex">
+              <div class="icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="text">
+                <h5></h5>
+              </div>
+            </blockquote>
+            </div>
+            
+        
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a href="https://youtu.be/Gm9JQGQjj3I?si=ncmTae6HyQQsDTjF"><img class="w-100" src="{%  static 'website/img/bg_img/Historique2.jpg' %}" alt=""></a>
+              <p>Mapping de l'ONCF a chellah a l'occasion du cinquantenaire de l'office en 2013</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a href="https://youtu.be/UbMz-gCa3kw?si=5cybDtlH8kywiM8h"><img class="w-100" src="{%  static 'website/img/bg_img/Historique3.jpg' %}" alt=""></a>
+                <p>Transport des participants a la marche verte en 1975</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a href="#"><img class="w-100" src="{%  static 'website/img/bg_img/Historique1.jpg' %}" alt=""></a>
+                <p>Voyage de feu SM Mohammed V par train entre Taza,Fes,Meknes et Rabat Ville 1956</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

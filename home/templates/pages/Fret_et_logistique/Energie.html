@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Energie {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/Energie.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Energie </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Fret_logistique' %}"><i class="fa fa-home"></i> Fret et logistique</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'Offre_transport_logistique' %}"><i class="fa fa-home"></i> Offre_transport_logistique</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Energie  </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p><b>
+                UNE SOLUTION LOGISTIQUE SECURISEE POUR UNE OPTIMISATION DE VOTRE « SUPPLY CHAIN »
+              </b></p></h1>
+              <h3><p>
+                Vous êtes un industriel des produits énergétiques ? Vous avez besoin d’un partenaire réactif et souple 
+                pour acheminer des gros volumes de produits pétroliers et de charbon ? Fret ONCF vous propose des solutions
+                 de transport massif et des prestations flexibles, adaptées à la nature de vos marchandises et à la variation de vos flux.         </p></h3>
+              <h1><p><b>
+                Nous vous proposons un matériel sécurisé, adapté à votre type de marchandise et aux volumes importants de vos transferts avec 
+                des wagons qui atteignent les 56 tonnes
+              </b></p></h1>
+
+              
+              <h1><p><b>
+                Pour compléter notre offre de transport et de logistique, notre <a href="https://www.oncf.ma/fr/content/download/51500/1183341/file/plan%20logistique%20hydro..pdf">Plan Logistique Hydrocarbures (PLH)</a> prévoit la construction de bacs de 
+                stockage des hydrocarbures sur des plateformes connectées au rail et offre plusieurs avantages :
+              </b></p></h1>
+              <p>> Contribution à la protection de l’environnement</p>
+              <p>> Extension de vos capacités de stockage</p>
+              <p>> Mise à disposition d’un large parc de matériel adéquat et adapté à vos besoins</p>
+              <p>> Meilleure organisation de vos transports par des envois en masse.</p>
+              <p>> Gain de productivité grâce à un transport de bout en bout</p>
+              <p>> Transport personnalisé et sécurisé de vos produits.</p>
+              <img class="w-100" src="{%  static 'website/img/bg_img/Fret-ok.png' %}" alt="">
+        </div>
+        <center><div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/56430/1297639/version/1/file/Conditions%20de%20vente.pdf" class="btn dento-btn booking-btn">Conditions de vente </a>
+            
+          </div></center>
+         <center> <div class="single-skills-area mt-30">
+            <a href="https://www.oncf.ma/fr/content/download/51506/1183359/version/1/file/Fiche%20des%20contacts.pdf" class="btn dento-btn booking-btn">Nos commerciaux à votre écoute </a>
+            
+          </div></center>
+          
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+            
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <a ><img class="w-100" src="{%  static 'website/img/bg_img/Acheminement-d-un-train-d-hydrocarbures_gallery_item_large.jpg' %}" alt=""></a>
+              <p>Acheminement d’un train d’hydrocarbures</p>
+            </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Operation-d-empotage-depotage-de-wagons-citernes_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Opération d’empotage/dépotage de wagons citernes</p>
+              </div>
+            <div class="single-widget-area adds-widget">
+                <a ><img class="w-100" src="{%  static 'website/img/bg_img/Operation-de-chargement-dechargement-de-wagons-citernes_gallery_item_large.jpg' %}" alt=""></a>
+                <p>Opération de chargement/déchargement de wagons citernes</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}

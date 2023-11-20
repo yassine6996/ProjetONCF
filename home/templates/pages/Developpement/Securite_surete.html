@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sécurité et sûreté {% endblock %}
+{% block content %}
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg_img/1profile_de_loncf.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Sécurité et sûreté  </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Vision' %}"><i class="fa fa-home"></i> Development</a></li>
+              <li class="breadcrumb-item"><a href="{% url 'Projet_structurant' %}"><i class="fa fa-home"></i>Grands Projet</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Sécurité et sûreté </li>>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ****** Blog Area Start ******* -->
+  <section class="dento--blog-area mt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 mb-100">
+          <!-- Blog Details Area -->
+          <div class="blog-details-area">
+            
+            <h1><p>RENFORCEMENT DE LA SECURITE AUX EMPRISES FERROVIAIRES</p></h1>
+            
+            <p>Les points de croisement de la voie ferrée avec la route (Passages à Niveau : PN) constituent un souci permanent de sécurité pour 
+                l’ensemble des gestionnaires des réseaux ferrés et des routes à travers le monde. Franchir un passage à niveau sans respecter 
+                la signalisation routière ou traverser la voie ferrée en rase campagne sans emprunter les passerelles et autres ouvrages d’art 
+                prévus à cet effet, c’est s’exposer à un danger imminent qui risque de coûter la vie.
+            </p>  
+            <p>Pour lutter contre ces comportements aux conséquences souvent dramatiques, l’ONCF s’est inscrit dans une démarche volontariste 
+                de sécurisation de ses emprises ferroviaires. Dans ce cadre, un ambitieux programme a été présenté à Sa Majesté Le Roi Mohammed VI,
+                 Que Dieu l’Assiste, en date du 14 novembre 2012 à Benguerir, visant à améliorer la sécurité à la traversée des PN.  </p>
+            
+            <img class="w-100" src="{%  static 'website/img/bg_img/Page-securite-2.jpg' %}" alt="">
+            <h1><p><b>
+                Objectifs du projet 
+              </b></p></h1>
+              
+
+            <blockquote cite="" class="dento-blockquote d-flex">
+              <div class="icon">
+                <i class="fa fa-quote-left"></i>
+              </div>
+              <div class="text">
+                <h5> Le premier, consiste à remplacer 180 passages à niveau prioritaires (fort trafic aussi bien routier que ferroviaire) par des ouvrages 
+                    d’art (OA) ou par des aménagements et déviation des circulations vers des franchissements existants</h5>
+              </div>
+              <div class="text">
+                <h5> Le deuxième axe concerne la sécurisation de la traversée de la voie ferrée sur les PN de deuxième priorité, en les équipant par des Systèmes d’Annonce et de Fermeture Automatique (SAFA)</h5>
+              </div>
+              <div class="text">
+                <h5> Le troisième axe vise la sensibilisation des usagers</h5>
+              </div>
+            </blockquote>
+            <img class="w-100" src="{%  static 'website/img/bg_img/quelquechiffre3.png' %}" alt="">
+            </div>
+            
+        
+         
+        </div>
+
+        <!-- Dento Sidebar Area -->
+        <div class="col-12 col-lg-4">
+          <div class="dento-sidebar">
+
+           
+            
+
+            <!-- Single Widget Area -->
+            <div class="single-widget-area adds-widget">
+              <img class="w-100" src="{%  static 'website/img/bg_img/Rythme-de-suppression-des-pn-par-an.png' %}" alt="">
+              
+            </div>
+            <div class="single-widget-area adds-widget">
+                <img class="w-100" src="{%  static 'website/img/bg_img/Evolution-du-nombre-de-deces-suite-aux-accidents-au-droit-des-pn.png' %}" alt="">
+               
+              </div>
+              <div class="single-widget-area adds-widget">
+                <img class="w-100" src="{%  static 'website/img/bg_img/Evolution-du-nombre-d-accidents-au-droit-des-pn.png' %}" alt="">
+               
+              </div>
+              <div class="single-widget-area adds-widget">
+                <img class="w-100" src="{%  static 'website/img/bg_img/Comparaison-en-termes-de-nombre-de-deces-au-droit-des-pn-par-rapport-a-des-reseaux-europeens.png' %}" alt="">
+               
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ****** Blog Area End ******* -->
+{% endblock %}
